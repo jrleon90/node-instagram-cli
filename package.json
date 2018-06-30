@@ -1,0 +1,24 @@
+{
+  "name": "instagram-cli",
+  "version": "1.0.0",
+  "description": "Command line interface developed with Node.js to get information from instagram API",
+  "main": "command.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "instagram",
+    "cli"
+  ],
+  "author": "jrleon90",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "commander": "^2.15.1",
+    "dotenv": "^6.0.0",
+    "inquirer": "^6.0.0",
+    "instagram-private-api": "git+https://github.com/huttarichard/instagram-private-api.git",
+    "lodash": "^4.17.10"
+  }
+}
