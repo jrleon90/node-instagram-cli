@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "cli-spinner": "^0.2.8",
     "commander": "^2.16.0",
     "dotenv": "^6.0.0",
     "fast-csv": "^2.4.1",
