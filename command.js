@@ -2,7 +2,7 @@
 
 const program = require('commander');
 const {prompt} = require('inquirer');
-const {exportFollowersData} = require('./logic');
+const {exportFollowersData,getMyData} = require('./logic');
 
 console.log(__dirname);
 
@@ -18,4 +18,14 @@ program
     .action(function(instagramUser){
         exportFollowersData(instagramUser);
     });
+
+program
+    .command('myAccount')
+    .alias('m')
+    .description('Get my personal data')
+    .action(function(){
+        getMyData();
+    });
+
+
 program.parse(process.argv);
